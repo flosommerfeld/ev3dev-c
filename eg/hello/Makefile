@@ -1,8 +1,8 @@
 all: hello.o
-	gcc hello.o -lev3dev-c -o hello
+	arm-linux-gnueabi-gcc hello.o -lev3dev-c -o hello
 
 hello.o: hello.c
-	gcc -c hello.c -I.
+	arm-linux-gnueabi-gcc -c hello.c -I/home/compiler/ev3dev-c/source/ev3
 
 clean:
 	rm -f *.o
